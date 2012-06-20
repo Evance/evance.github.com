@@ -6,15 +6,100 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<style type="text/css">
+
+/********** reset style  ***********/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td { 
+padding: 0; 
+margin: 0; 
+} 
+table { 
+border-collapse: collapse; 
+border-spacing: 0; 
+} 
+fieldset,img { 
+border: 0; 
+} 
+address,caption,cite,code,dfn,em,strong,th,var { 
+font-weight: normal; 
+font-style: normal; 
+} 
+ol,ul { 
+list-style: none; 
+} 
+caption,th { 
+text-align: left; 
+} 
+h1,h2,h3,h4,h5,h6 { 
+font-weight: normal; 
+font-size: 100%; 
+} 
+q:before,q:after { 
+content:”; 
+} 
+abbr,acronym { border: 0; 
+}
+
+
+/********** common style  ***********/
+body{font-size:12px;color:#2e2e2e;}
+a{color:#0f89df;text-decoration:none;}
+.float-l{float:left}
+.float-r{float:right}
+.hidden{display:none;}
+/* HTML 5 */
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+/* Clear Fix */
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix {display:inline-block;zoom:1;}
+/* Hide from IE Mac */
+.clearfix {display:block;}
+/* End hide from IE Mac */
+/* end of clearfix */
+
+
+/********** override style  ***********/
+html{overflow-y:scroll;}
+body {
+	background:#eee;
+	font:14px/22px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	border-top: 2px solid #222;
+}
+h1 {
+	font-size:250%;
+	text-align:center;
+	line-height:150%;
+}
+h2 {
+	font-size:150%;
+	line-height:150%;
+}
+h3 {
+	font-size:120%;
+	line-height:150%;
+}
+section {
+	padding:10px;
+}
+/********** page style  ***********/
+.layout {
+	width:1000px;
+	margin:0 auto;
+	background:#fff;
+}
+#main {
+}
+</style>
 </head>
 <body>
 
-<header> 
-	<h1>Evance's Resume</h1>
+<header class="layout"> 
+	<h1>舒文亮</h1>
 </header>
 <!-- header END -->
 
-<div id="main">
+<div id="main" class="layout">
 	<section>
 		<h2 class="hd">工作意向：</h2>
 		<div class="bd item-list">
@@ -42,32 +127,178 @@
 	</section>
 
 	<section>
-		<h2 class="hd">自我评价:</h2>
+		<h2 class="hd">自我概述:</h2>
 		<div class="bd">
-<p>性格开朗，善于与人沟通，参加过专业的管理培训课程。</p>
-<p>四年以上的产品开发与产品线设计经验，主导推动过大型的Web产品方案，三年和海外团队协作经历。
-拥有较好的资源协调能力。</p>
-<p>有两年的UX团队管理经验。</p>
-<p>擅长基于Web平台的前端开发，</p>
-<p>较丰富的技术面试和人员招聘经验；</p>
-<p>对SEO了解较深，有一年时间的产品经理经验</p>
-<p>管理和带领外包团队工作的经验；</p>
-<p>目前从事个人云计算”相关产品的研发与项目推进。</p>
+			<ul>
+				<li>性格开朗，善于与人沟通，参加过专业的管理培训课程。</li>
+				<li>四年以上的产品开发与产品线设计经验，主导推动过大型的Web产品方案，三年和海外团队协作经历。
+				拥有较好的资源协调能力。</li>
+				<li>有两年的UX团队管理经验。</li>
+				<li>擅长基于Web平台的前端开发，</li>
+				<li>较丰富的技术面试和人员招聘经验；</li>
+				<li>对SEO了解较深，有一年时间的产品经理经验</li>
+				<li>管理和带领外包团队工作的经验；</li>
+				<li>目前从事个人云计算”相关产品的研发与项目推进。</li>
+			</ul>
 		</div>
 	</section>
 
 	<section>
 		<h2 class="hd">工作经历：</h2>
 		<div class="bd">
+			<div class="item-list">
+				<div class="item">
+					<h3>
+						<date>2011/10 - 至今</date>
+						<span>阿里巴巴集团中心 | 云相册 | 高级产品工程师</span>
+					</h3>
+					<p>参加阿里巴巴集团中心的敏捷创新项目团队-云相册；<br />
+						主要从事开发基于个人消费的云计算产品-云相册、淘宝相册的产品设计和前端开发工作(web)、主持UED招聘；
+					</p>	
+				</div>
+				<div class="item">
+					<h3>
+						<date>2011/06 - 2011/10</date>
+						<span>阿里巴巴国际网站Alibaba.com | UED | 高级前端工程师</span>
+					</h3>
+					<p>加入阿里巴巴国际网站，主要负责国际网站的多国语言平台业务。<br />
+						参与全新搭建阿里巴巴国际网站的海外扩张业务，主持完成项目；<br />
+						加入国际网站UED团队工业化团队，提升UED团队协作的工业化流程。
+					</p>	
+				</div>
+				<div class="item">
+					<h3>
+						<date>2008/06 - 2011/06</date>
+						<span>	阿里巴巴日本株式会社 | UED | Web产品工程师</span>
+					</h3>
+					<p> 就职于阿里巴巴日本海外团队，从事中日贸易电子商务平台构建与产品设计工作。<br />
+					    横向虚线部门在UED部门从事前端开发工作，并负责带领前端团队进行项目开发；<br />
+					    纵向实线部门在买家平台，负责日本买家流入与引导，主要工作内容是分析商业数据，做产品方案以及应对岗位的执行与推动工作。<br />
+					    分配和调整人力资源，推进招聘和人才引进工作；
+					</p>	
+					<p>
+						于2009年10月获阿里巴巴日本09年度最有价值员工(MVP)奖励。<br />
+						负责阿里巴巴日本平台的产品业务，包括用户体验与针对Google和Yahoo日本的搜索引擎优化，截止目前已是国内最大的电子商务B2B平台。<br />
+						参与和淘宝对接的淘日本项目和ETC项目，带领团队完成UX相关工作。<br />
+						和外包公司协调和管理外包团队；
+					</p>
+				</div>
+			</div>
+		</div>
+	</section> <!-- 工作经历 结束 -->
+
+	<section>
+		<h2>项目经验</h2>
+		<div class="bd item-list">
+			<div class="item">
+				<h3><date>2011/10</date> - <date>2012/06</date> 云相册</h3>
+				<div class="content">
+						<ul>
+							<li>
+								责任描述：在新的团队全现负责UED前端工作；<br />
+								从产品需求方的角度和淘宝、阿里云的技术团队进行包括技术实现与产品细节等的沟通；<br />
+								内部招聘，参与面试；
+							</li>
+							<li>
+								项目描述：阿里巴巴集团中心的创新项目；<br />
+								主要面向针对个人用户的云基础服务，相册存储。<br />
+								涉及到的产品业务包括Win，iOS，Web等平台。
+							</li>
+						</ul>
+				</div>
+			</div>
+
+			<div class="item">
+				<h3><date>2009/11</date> - <date>2010/02</date> 淘日本(japan.taobao.com)</h3>
+				<div class="content">
+						<ul>
+							<li>
+								责任描述：分析战略方案，参与产品前期设计以后期的需求点；<br />
+								搭建前端构架，并带领UX前端团队工作；<br />
+								负责与外包技术团队合作，分配对应的UED资源；
+							</li>
+							<li>
+								项目描述：淘日本项目属于阿里巴巴日本株式会社和淘宝的战略全作项目，针对日本的B市场，打通淘宝与阿里巴巴的通道，完成B2B2C业务的布局，涉及到搜索、浏览，交易，会员等多个产品线。<br />
+								属于大型平台的衍生系统。
+							</li>
+						</ul>
+				</div>
+			</div>
+
+			<div class="item">
+				<h3><date>2008/09</date> - <date>2009/01</date> Javascript框架迁移项目</h3>
+				<div class="content">
+						<ul>
+							<li>
+								责任描述：担当项目经理，负责分配迁移工作和重写核心代码；<br />
+								开发通用代码插件，指导团队进行代码重构工作。<br />
+								同时根据开发人员的习惯，进行Javascript代码规范编码，以及后期的培训。
+							</li>
+							<li>
+								项目描述：全平台使用混合框架杂糅，导致代码混乱无序。<br />
+								迁移后，全站使用统一的框架，移除了滥用的所有脚本，重写了基于原框架的脚本以及效率低下的部份原生代码。<br />
+								经过重构过的平台页面，平均负载降低30%以上。<br />
+								推进UED正式进入规范化工作进程。
+							</li>
+						</ul>
+				</div>
+			</div>
 
 		</div>
 	</section>
+
+
+	<section>
+		<h2 class="hd">教育经历</h2>
+		<div class="bd">
+			<ul>
+				<li><date>2004/07</date> - <date>2008/07</date> 山西省太原科技大学 | 通信工程 | 本科</li>
+			</ul>
+		</div>
+	</section> <!-- 教育经历 结束-->
+
+	<section>
+		<h2>培训经历</h2>
+		<div class="bd item-list">
+			<div class="item">
+				<h3><date>2010/10</date> - <date>2010/12</date></h3>
+				<div class="content">
+					培训课程：M0管理培训<br />
+					培训地点：阿里巴巴滨江园区<br />
+					培训描述：技术管理、团队人才协调、绩效考核。<br />
+				</div>
+			</div>
+		</div>
+	</section> <!-- 培训经历 结束 -->
+
+	<section>
+		<h2>证书</h2>
+		<div class="bd item-list">
+			<div class="item"><date>2006/07</date> - 大学英语四级(527) </div>
+			<div class="item"><date>2008/04</date> - 大学英语六级 </div>
+		</div>
+	</section> <!-- 所获证书 结束 -->
+
+	<section>
+		<h2>语言能力</h2>
+		<div class="bd item-list">
+			<div class="item">英语 - 读写能力熟练 | 听说能力良好 </div>
+		</div>
+	</section> <!-- 语言能力 结束 -->
+
+	<section>
+		<h2>社会活动</h2>
+		<div class="bd item-list">
+			<div class="item">Drupal官方中国社区管理员</div>
+		</div>
+	</section> <!-- 语言能力 结束 -->
+
 </div>
 <!-- #main END -->
 
-<footer> 
+<footer class="layout"> 
 	<section>
-		update on 2012-05-22
+		update on 2012-06-20
 	</section>
 </footer>
 <!-- footer END -->
