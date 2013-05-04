@@ -2,7 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,inital-scale=1" />
+<meta name="viewport" content="width=device-width,inital-scale=1,user-scalable=0,user-scalable=no" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="red" name="apple-mobile-web-app-status-bar-style" />
 <title>舒文亮的简历</title>
 <link type="text/css" rel="stylesheet" href="./style.css" />
 <!--[if lt IE 9]>
@@ -92,7 +95,9 @@ section {
 #main {
 	padding:1.5em 0;
 	border-radius:1px;
-	background:#fff;
+	background:#eee;
+}
+section h2 {
 }
 section .bd {
 	padding:0.5em 0 0 1em;
@@ -121,14 +126,23 @@ header .ename {
 	list-style-position: inside;
 }
 #experience .item {
-	margin:10px 0;
+	padding:1em 0;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #ccc;
 }
-#experience ul {
-	margin:0 0 0 1em;
+#experience .item:first-child {
+	border-top:none;
+}
+#experience .item:last-child {
+	border-bottom:none;
 }
 #experience li {
 	list-style-type:disc;
 	list-style-position: inside;
+}
+#related li {
+	display:inline-block;
+	margin:0 2em 0 0;
 }
 footer {
 	color:#ddd;
@@ -172,33 +186,41 @@ footer p {
 		<h2 class="hd">工作意向：</h2>
 		<ul class="bd item-list">
 			<li class="item">
-				<span class="title">行业：</span>
-				<span class="content">移动互联网/电子商务/云计算</span>
+				<strong class="title">行业：</strong>
+				移动互联网/电子商务/云计算
 			</li>
 			<li class="item">
-				<span class="title">职位：</span>
-				<span class="content">UX/UED主管、高级前端工程师</span>
+				<strong class="title">职位：</strong>
+				UX/UED主管、高级前端工程师
 			</li>
 			<li class="item">
-				<span class="title">地点：</span>
-				<span class="content">杭州、上海</span>
+				<strong class="title">地点：</strong>
+				杭州、上海
 			</li>
 			<li class="item">
-				<span class="title">月薪：</span>
-				<span class="content">25K+/月</span>
+				<strong class="title">月薪：</strong>
+				25K+/月
 			</li>
 		</ul>
 	</section>
+
+	<section>
+		<h2 class="hd">教育经历</h2>
+		<div class="bd">
+			<ul>
+				<li><date>2003/07</date> - <date>2008/07</date> 山西省太原科技大学 | 通信工程 | 本科</li>
+			</ul>
+		</div>
+	</section> <!-- 教育经历 结束-->
 
 	<section id="self">
 		<h2 class="hd">自我概述:</h2>
 		<div class="bd">
 			<ul>
 				<li>主要从事基于Web前端开发；</li>
-				<li>性格开朗，善于与人沟通，参加过专业的管理培训课程；</li>
-				<li>5年的产品开发经验，2年海外团队协作经历；拥有较好的资源协调能力；</li>
-				<li>3+年的UX、PD(产品经理)团队管理经验；</li>
-				<li>对SEO/SEM熟悉，有近两年PD背景；</li>
+				<li>性格开朗，参加过专业的管理培训，与人沟通相对有经验；</li>
+				<li>5年开发经验，2年海外团队协作经历，拥有较好的资源协调能力；</li>
+				<li>3+年团队管理经验(UX/PD)、2年PD背景</li>
 			</ul>
 		</div>
 	</section>
@@ -209,7 +231,7 @@ footer p {
 			<div class="item-list">
 				<div class="item">
 					<h3>
-						<date>2012/8 - 至今</date>
+						<date>2012/8-至今</date>
 						<span>天猫 | 前端主管 </span>
 					</h3>
 					<ul>
@@ -219,7 +241,7 @@ footer p {
 				</div>
 				<div class="item">
 					<h3>
-						<date>2011/10 - 2012/8</date>
+						<date>2011/10-2012/8</date>
 						<span>阿里巴巴集团中心 | 云相册 | 高级产品工程师</span>
 					</h3>
 					<ul>
@@ -229,7 +251,7 @@ footer p {
 				</div>
 				<div class="item">
 					<h3>
-						<date>2011/06 - 2011/10</date>
+						<date>2011/06-2011/10</date>
 						<span>阿里巴巴国际网站Alibaba.com | 高级前端工程师</span>
 					</h3>
 					<ul>
@@ -240,7 +262,7 @@ footer p {
 				</div>
 				<div class="item">
 					<h3>
-						<date>2008/06 - 2011/06</date>
+						<date>2008/06-2011/06</date>
 						<span>	阿里巴巴日本株式会社 | Web产品工程师</span>
 					</h3>
 					<ul>
@@ -253,16 +275,6 @@ footer p {
 		</div>
 	</section> <!-- 工作经历 结束 -->
 
-
-	<section>
-		<h2 class="hd">教育经历</h2>
-		<div class="bd">
-			<ul>
-				<li><date>2004/07</date> - <date>2008/07</date> 山西省太原科技大学 | 通信工程 | 本科</li>
-			</ul>
-		</div>
-	</section> <!-- 教育经历 结束-->
-
 	<section>
 		<h2 class="hd">所获奖励</h2>
 		<div class="bd">
@@ -272,7 +284,6 @@ footer p {
 		</div>
 	</section> <!-- 所获奖励 结束-->
 
-
 	<section>
 		<h2>语言能力</h2>
 		<div class="bd item-list">
@@ -281,14 +292,26 @@ footer p {
 	</section> <!-- 语言能力 结束 -->
 
 
+	<section id="related">
+		<h2>其他信息</h2>
+		<div class="bd">
+			<ul>
+				<li><a href="http://orzl.com">Blog</a></li>
+				<li><a href="http://github.com/Evance">Github</a></li>
+				<li><a href="http://github.com/Evance">@Evance</a></li>
+			</ul>
+		</div>
+	</section> <!-- 其他 结束 -->
+
 </div>
 <!-- #main END -->
 
 <footer class="layout"> 
-		<p class="made"><date>updated on 2013-4-28</date></p>
+		<p class="made"><date>updated on 2013-5-02</date></p>
 </footer>
 <!-- footer END -->
-
-
+<script>
+//window.scrollTo(0,20)
+</script>
 </body>
 </html>
