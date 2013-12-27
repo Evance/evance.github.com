@@ -24,7 +24,7 @@
 <script>
 (function() {
 
-    var win = window, doc = document;
+     var win = window, doc = document;
     var ra = win.devicePixelRatio || 1,
         cw = win.innerWidth, //viewport 可见宽
         ch = win.innerHeight, //viewport 可见高
@@ -49,6 +49,9 @@
         sw = cw * ra;
         sh = ch * ra;
     }
+    
+    //istouch
+    var ist = (('createTouch' in doc) && ('ontouchstart' in win)) ? 1 : 0;
         
     $("J_cw").innerText = cw;
     $("J_ch").innerText = ch;
