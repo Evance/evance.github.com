@@ -16,7 +16,7 @@
 <script>
 (function() {
     var js = document.getElementById("J_js");
-    js.innerText = window.navigator.userAgent;
+    js.innerHTML = window.navigator.userAgent;
 
     //create qrcode img    
     var url = "https://chart.googleapis.com/chart?chs=160x160&cht=qr&choe=UTF-8&chl=" + encodeURIComponent(window.location.href),
